@@ -233,13 +233,43 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
-.features-list > .features-card {
+.features-card {
   /* outline: 1px solid yellow; */
   width: calc((100% - 90px) / 4);
   margin-right: var(--list-gap);
 }
 .features-list :nth-child(4) {
   margin-right: 0px;
+}
+.features-card::before {
+  display: block;
+  content: "";
+  height: 120px;
+  /* outline: 1px solid red; */
+  background-image: url();
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+  background-size: 70px;
+}
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+  background-size: 70px;
+}
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+  background-size: 70px;
+}
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+  background-size: 70px;
 }
 /* ...............................ПРЕИМУЩЕСТВА.................... */
 
