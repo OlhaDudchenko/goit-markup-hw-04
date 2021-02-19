@@ -246,7 +246,6 @@ img {
   content: "";
   height: 120px;
   /* outline: 1px solid red; */
-  background-image: url();
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -382,6 +381,47 @@ img {
 .tel-footer {
   margin-top: 9px;
   margin-bottom: 0px;
+}
+.social {
+  color: var(--white);
+  text-decoration: none;
+  text-align: center;
+}
+
+.social-list {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+}
+.instagram {
+  display: inline-flex;
+  background-image: url(../images/instagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+.instagram :hover {
+  color: var(--blue);
+}
+.twitter {
+  background-image: url(../images/twitter.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+.facebook {
+  background-image: url(../images/facebook.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+.linkedin {
+  background-image: url(../images/linkedin.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
 }
 
 /* .........................ФУТЕР..................... */
