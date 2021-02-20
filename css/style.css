@@ -60,7 +60,8 @@ img {
 }
 .features,
 .services,
-.team {
+.team,
+.clients {
   padding-top: 94px;
   /* background-color: goldenrod; */
 }
@@ -161,8 +162,18 @@ img {
 }
 .header-icon {
   fill: currentColor;
+  margin-right: 10px;
 }
-
+.mail {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+.tel {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
 /* ........................ХЕДЕР.............................. */
 
 /* .............................ГЕРОЙ............................. */
@@ -175,7 +186,7 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   color: var(--white);
-  /* background-color: #2f303a; */
+  background-color: #2f303a;
   text-align: center;
   background-image: linear-gradient(
       to right,
@@ -248,13 +259,17 @@ img {
 .features-list :nth-child(4) {
   margin-right: 0px;
 }
-.thumb {
+.box {
   background-color: #f5f4fa;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
-
+/* Пример бекграунд имейдж */
 /* .features-card::before {
   display: block;
   content: "";
@@ -312,7 +327,8 @@ img {
 /* .................................НАША...КОМАНДА.......... */
 
 .services-title,
-.team-title {
+.team-title,
+.clients-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 0.7;
@@ -346,7 +362,7 @@ img {
 .team-card {
   text-align: center;
   /* outline: 1px solid yellow; */
-  width: calc((100%-90px) / 4);
+  width: calc((100% - 90px) / 4);
   margin-right: var(--list-gap);
   padding-bottom: var(--list-gap);
   background-color: var(--white);
@@ -360,13 +376,20 @@ img {
   align-items: center;
   justify-content: center;
 }
+.social-list {
+  margin-right: 10px;
+}
+.social-links:nth-last-child(4) {
+  margin-right: 0px;
+}
 .team-link {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   color: #afb1b8;
 }
 .team-link:hover,
@@ -385,32 +408,33 @@ img {
 /* ...............................ПОСТОЯННЫЕ..КЛИЕНТЫ................. */
 .clients {
   text-align: center;
+  padding-bottom: 94px;
 }
 
 .clients-card {
   display: flex;
   margin-top: 50px;
 }
-.clients-list {
+.clients-link {
   display: flex;
-  align-items: baseline;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #afb1b8;
+  color: #afb1b8;
+  border-radius: 4px;
   margin-right: var(--list-gap);
   width: 170px;
   height: 90px;
+  cursor: pointer;
 }
 .clients-list:nth-child(6n) {
   margin-right: 0px;
 }
 
-.clients-link {
-  display: flex;
-  align-items: center;
-  color: #afb1b8;
-}
-.clients-list:hover,
-.clients-list:focus {
+.clients-link:hover,
+.clients-link:focus {
   color: var(--blue);
+  border: 1px solid var(--blue);
 }
 .clients-icon {
   fill: currentColor;
@@ -419,6 +443,10 @@ img {
 
 /* .........................ФУТЕР..................... */
 
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
 .footer {
   background-color: #2f303a;
 }
@@ -455,17 +483,31 @@ img {
   margin-top: 9px;
   margin-bottom: 0px;
 }
+.social {
+  margin-left: 70px;
+}
+.social-title {
+  color: var(--white);
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
 .footer-link {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50px;
-  outline: 1px solid red;
   color: #afb1b8;
+  background-color: rgba(255, 255, 255, 0.1);
+  /* outline: 1px solid red; */
 }
 .footer-link:hover,
-.team-link:focus {
+.footer-link:focus {
   background-color: var(--blue);
   color: var(--white);
 }
@@ -546,8 +588,8 @@ img {
   text-decoration: none;
   display: block;
 }
-.item :hover,
-.item :focus {
+.serv-card .item :hover,
+.serv-card .item :focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -564,8 +606,8 @@ img {
 .serv-card {
   /* outline: 1px solid yellow; */
   width: calc((100% - 60px) / 3);
-  margin-right: var(--list-gap);
-  margin-bottom: var(--list-gap);
+  margin-right: 30px;
+  margin-bottom: 30px;
   background-color: var(--white);
   border: 1px solid #eeeeee;
 }
@@ -577,8 +619,7 @@ img {
   margin-bottom: 0;
 }
 
-/* Альтернатива
-.serv-list {
+/* Альтернатива .serv-list {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--features-list-gap));
@@ -587,5 +628,6 @@ img {
 .serv-card {
   flex-basis: calc(100% / 3 - var(--features-list-gap));
   margin-top: var(--features-list-gap);
-  margin-left: var(--features-list-gap);} */
+  margin-left: var(--features-list-gap);
+} */
 /* ............................УСЛУГИ.КОМПАНИИ....................... */
