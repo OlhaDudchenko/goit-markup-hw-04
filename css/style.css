@@ -321,6 +321,9 @@ img {
 .services-card .link {
   display: block;
 }
+.services {
+  padding-bottom: 94px;
+}
 
 /* ...........................ЧЕМ..МЫ..ЗАНИМАЕМСЯ................... */
 
