@@ -166,12 +166,12 @@ img {
 }
 .mail {
   display: flex;
-  justify-content: baseline;
+  justify-content: center;
   align-items: center;
 }
 .tel {
   display: flex;
-  justify-content: baseline;
+  justify-content: center;
   align-items: center;
 }
 /* ........................ХЕДЕР.............................. */
@@ -222,7 +222,7 @@ img {
   border-radius: 4px;
   padding: 10px 32px 10px 32px;
   min-width: 200px;
-  border-color: 1px solid var(--blue);
+  border: 1px solid var(--blue);
   margin-top: 30px;
 }
 /* .............................ГЕРОЙ............................. */
