@@ -164,7 +164,7 @@ img {
   fill: currentColor;
   margin-right: 10px;
 }
-.mail {
+.item .mail {
   display: flex;
   justify-content: center;
   align-items: center;
